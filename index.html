@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projekt 1</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/fonts/bbh-sans-bartle@latest/latin-400-normal.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Uvodna stranica</h1>
+<a href="#popupForm" class="popup-btn">Prijava</a>
+
+<div id="popupForm" class="popup">
+  <div class="popup-content">
+    <a href="#" class="close-btn">&times;</a>
+    <h3>Unesite podatke</h3>
+    <form>
+  <fieldset>
+    <legend>Prijava:</legend>
+
+    <label for="fname">Ime:</label><br>
+    <input type="text" id="fname" name="fname" required><br><br>
+
+    <label for="lname">Prezima:</label><br>
+    <input type="text" id="lname" name="lname" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="birthday">Datum rođenja:</label><br>
+    <input type="date" id="birthday" name="birthday" required><br><br>
+
+    <input type="submit" value="Submit">
+  </fieldset>
+    </form>
+  </div>
+</div>
+
+  </header>
+  <style>
+  span { 
+  color : green;
+font-style: italic;
+  }
+
+  </style>
+  <main>
+    <div class="container">
+    <section class="box">
+      <h2>Uvod</h2>
+      <p>Ovo je početni odlomak. Ovdje prikazujem kako koristim osnovne <span>HTML-a </span> i <span>CSS-a</span>.</p>
+      <article>
+        <h3>O meni </h3>
+        <p>Student sam druge godine tehničko- tehnološkog smjera na <em>Grafičkom fakultetu u Zagrbu</em>. Igram u <strong>futsal</strong> ekipi našega fakulteta. U slobodno vrijeme bavim se još rekreativno nogometom i folklorom. </p>
+      </article>
+    </section>
+
+      <section class="box">
+        <h4>Oprema za nogomet</h4>
+        <ul>
+          <li>kopačke</li>
+          <li>kostobrani</li>
+          <li>štucne</li>
+          <li>hlačice</li>
+          <li>dres</li>
+        </ul>
+      </section>
+
+      <section class="box">
+      <h2>Stranica Grafičkog fakulteta</h2>
+      <p>Na stranici Grafičkog Fakulteta dobivam sve bitne informacije vezane uz fakultet.
+        <p>Posjeti <a href="https://www.grf.unizg.hr/" target="_blank">GRF</a> za više informacija.</p>
+    </section>
+
+      <section class="box">
+        <h4>Sastojci za kavu:</h4>
+        <ol>
+          <li>kava</li>
+          <li>šećer</li>
+          <li>kipuća voda</li>
+          <li>mlijeko</li>
+        </ol>
+      </section>
+
+      <section class="color-choice">
+  <h3>Odaberi svoju omiljenu CMYK boju:</h3>
+
+  <form action="/action_page.php">
+    <input type="radio" id="html" name="fav_color" value="cian">
+    <label for="html">Cian</label><br>
+
+    <input type="radio" id="css" name="fav_color" value="magenta">
+    <label for="css">Magenta</label><br>
+
+    <input type="radio" id="javascript" name="fav_color" value="zuta">
+    <label for="javascript">Žuta</label><br><br>
+
+    <input type="radio" id="javascript" name="fav_color" value="crna">
+    <label for="javascript">Crna</label><br><br>
+
+    <input type="submit" value="Pošalji">
+  </form>
+</section>
+
+<section class="box">
+  <label for="browser">Odaberi najdraži internetski pretraživač:</label>
+<input list="browsers" name="browser" id="browser">
+
+
+  <datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+  </datalist>
+</section>
+
+<form action="/action_page.php" method="get">
+  Kakva pića više volite:
+  <button name="subject" type="submit" value="fav_gazirana">gazirana</button>
+  <button name="subject" type="submit" value="fav_negazirana">negazirana</button>
+</form>
+
+  <table id="fakulteti">
+  <thead>
+    <tr>
+      <th colspan="2">Sveučilište u Zagrebu</th>
+    </tr>
+    <tr>
+      <th>Fakultet</th>
+      <th>Broj studenata</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Grafički fakultet</td>
+      <td>1050</td>
+    </tr>
+
+    <tr>
+      <td>Fakultet elektrotehnike i računarstva</td>
+      <td>6500</td>
+    </tr>
+
+    <tr>
+      <td>Filozofski fakultet</td>
+      <td>7000</td>
+    </tr>
+
+    <tr>
+      <td>Ekonomski fakultet</td>
+      <td>9000</td>
+    </tr>
+
+    <tr>
+      <td rowspan="2">Medicinski fakultet</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <td>(specijalizanti) 1200</td>
+    </tr>
+
+    <tr>
+      <td>Pravni fakultet</td>
+      <td>6000</td>
+    </tr>
+
+    <tr>
+      <td>Arhitektonski fakultet</td>
+      <td>1200</td>
+    </tr>
+
+    <tr>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+  </main>
+</body>
+</html>

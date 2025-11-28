@@ -1,0 +1,250 @@
+body {
+  font-family: 'BBH Sans Bartle', sans-serif;
+  background-color: #e6faff;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, p, a, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff00ff;
+  padding: 28px 40px;
+  text-align: center; 
+}
+
+header h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin: 0;
+}
+
+main {
+  padding: 0 40px;
+  margin-top: 20px;
+}
+
+section {
+  background-color: #ffffff;
+  border: 3px solid #00ffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2, h3, h4 {
+  color: #ff00ff;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+a {
+  color: #00ffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff00ff;
+  text-decoration: underline;
+}
+
+article {
+  background-color: #f9e6ff;
+  border-left: 4px solid #ff00ff;
+  padding: 14px;
+  margin-top: 12px;
+  border-radius: 6px;
+}
+
+ul, ol {
+  margin-left: 18px;
+  padding-left: 20px;
+  color: #1a1a1a;
+}
+
+ul li::marker {
+  color: #00ffff;
+}
+
+ol li::marker {
+  color: #ff00ff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle; 
+}
+
+.popup-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 1000;
+}
+
+.popup-btn:hover {
+  text-decoration: underline;
+}
+
+.popup {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-content {
+  background-color: #ff00ff;
+  color: #ffffff;
+  border-radius: 12px;
+  width: 300px;
+  padding: 20px;
+  margin: 120px auto;
+  position: relative;
+  box-shadow: 0 0 12px rgba(255, 0, 255, 0.4);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* Input i button */
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  background-color: #ff99ff;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #ff00ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+/* Tabela fakulteti */
+#fakulteti {
+  width: 100%;
+  margin: 2px auto;
+  border-collapse: collapse;
+  border-radius: 35px 10px;
+  overflow: hidden;
+  border: 5px solid #00ffff;
+}
+
+#fakulteti th, #fakulteti td {
+  padding: 10px 14px;
+  border: 1px solid #00ffff;
+}
+
+#fakulteti thead tr:first-child th {
+  background-color: #ff00ff;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+#fakulteti thead tr:nth-child(2) th {
+  background-color: #ffe6ff;
+  color: #333;
+  text-align: left;
+}
+
+#fakulteti tbody tr:nth-child(even) {
+  background-color: #f0ffff;
+}
+
+#fakulteti tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+#fakulteti td:first-child {
+  font-weight: 600;
+  color: #ff00ff;
+}
+
+section article p, 
+section article ul li, 
+section article ol li {
+  margin-bottom: 8px; 
+}
+
+a[target="_blank"] {
+  font-style: italic; 
+}
+
+button[class*="popup"] {
+  float: right; 
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
